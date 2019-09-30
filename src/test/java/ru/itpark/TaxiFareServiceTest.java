@@ -21,7 +21,7 @@ class TaxiFareServiceTest {
     void taxiFareWithDiscount() {
         TaxiFareService service = new TaxiFareService();
         int distance = 50;
-        int expectedFare = 1007;
+        int expectedFare = 1_007;
 
         int actualFare = service.taxiFare(distance);
 
@@ -32,7 +32,7 @@ class TaxiFareServiceTest {
     void taxiFareWithMaxDiscount() {
         TaxiFareService service = new TaxiFareService();
         int distance = 100;
-        int expectedFare = 1960;
+        int expectedFare = 1_960;
 
         int actualFare = service.taxiFare(distance);
 

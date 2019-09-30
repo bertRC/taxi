@@ -4,7 +4,7 @@ public class TaxiFareService {
     int taxiFare(int distance) {
         int boardingCost = 60;
         int kilometerCost = 20;
-        int minimalCostForDiscount = 1000;
+        int minimalCostForDiscount = 1_000;
         int discountPercent = 5;
         int maximumDiscount = 100;
 

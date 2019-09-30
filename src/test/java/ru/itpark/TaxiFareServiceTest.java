@@ -15,6 +15,27 @@ class TaxiFareServiceTest {
         int actualFare = service.taxiFare(distance);
 
         assertEquals(expectedFare, actualFare);
+    }
 
+    @Test
+    void taxiFareWithDiscount() {
+        TaxiFareService service = new TaxiFareService();
+        int distance = 50;
+        int expectedFare = 1007;
+
+        int actualFare = service.taxiFare(distance);
+
+        assertEquals(expectedFare, actualFare);
+    }
+
+    @Test
+    void taxiFareWithMaxDiscount() {
+        TaxiFareService service = new TaxiFareService();
+        int distance = 100;
+        int expectedFare = 1960;
+
+        int actualFare = service.taxiFare(distance);
+
+        assertEquals(expectedFare, actualFare);
     }
 }

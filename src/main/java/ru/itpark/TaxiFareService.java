@@ -1,3 +1,5 @@
+package ru.itpark;
+
 public class TaxiFareService {
     int taxiFare(int distance) {
         int boardingCost = 60;

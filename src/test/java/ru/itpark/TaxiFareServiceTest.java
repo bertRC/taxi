@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class TaxiFareServiceTest {
 
     @Test
-    void taxiFareWithoutDiscount() {
+    void shouldCalculateTaxiFareWithoutDiscount() {
         TaxiFareService service = new TaxiFareService();
         int distance = 1;
         int expectedFare = 80;
@@ -18,7 +18,7 @@ class TaxiFareServiceTest {
     }
 
     @Test
-    void taxiFareWithDiscount() {
+    void shouldCalculateTaxiFareWithDiscount() {
         TaxiFareService service = new TaxiFareService();
         int distance = 50;
         int expectedFare = 1_007;
@@ -29,7 +29,7 @@ class TaxiFareServiceTest {
     }
 
     @Test
-    void taxiFareWithMaxDiscount() {
+    void shouldCalculateTaxiFareWithMaxDiscount() {
         TaxiFareService service = new TaxiFareService();
         int distance = 100;
         int expectedFare = 1_960;
